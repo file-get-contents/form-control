@@ -1,7 +1,7 @@
 <!--
   2024-08-10 chrome
   control is able to set 2024-09-30. when pressing submit button, invalid appear. 
-  If the min,max attributes span multiple months, the user experience will be significantly degraded.
+  if the min, max attributes span multiple months, the user experience will be significantly degraded without a picker.
 -->
 
 <body>
