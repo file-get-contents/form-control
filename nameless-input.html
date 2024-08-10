@@ -1,0 +1,15 @@
+<!--
+  2024-08-10 chrome で確認
+  input コントロールのうち文字列を扱うものに name 属性を設定していない場合、change イベントが発生した際に name="" となる 
+
+  https://github.com/DefinitelyTyped/DefinitelyTyped/blob/798fe05a96c938c7dd28f26a6ebaf061ce5a73b2/types/react/index.d.ts#L3376
+  react18.2 でも同様
+-->
+
+<body>
+  <input type="text" id="test">
+  <script>
+  "use strict;"
+  document.getElementById("test").addEventListener("change", change => console.log(change))
+  </script>
+</body>
