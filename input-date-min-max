@@ -1,0 +1,16 @@
+<!--
+  2024-08-10 chrome
+  control is able to set 2024-09-30. when pressing submit button, invalid appear. 
+
+-->
+
+<body>
+<form>
+  <input type="date" min="2024-08-08" max="2024-09-12">
+  <button type="submit">submit</button>
+</form>
+  <script>
+  "use strict;"
+  document.getElementById("test").addEventListener("change", change => console.log(change))
+  </script>
+</body>
