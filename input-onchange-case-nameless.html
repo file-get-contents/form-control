@@ -1,0 +1,22 @@
+<!--
+  2024-08-10 chrome
+  If a change event occurs on an input tag that does not have a name attribute, the name attribute will become an empty string.
+
+  https://github.com/DefinitelyTyped/DefinitelyTyped/blob/798fe05a96c938c7dd28f26a6ebaf061ce5a73b2/types/react/index.d.ts#L3376
+  react18.2 same
+-->
+
+<body>
+  <input type="text" id="test">
+  <script>
+  "use strict;"
+  document.getElementById("test").addEventListener("change", change => console.log(change)) // <=1
+  </script>
+</body>
+
+/*
+1,
+︙
+name: ""
+︙
+*/
